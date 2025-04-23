@@ -104,7 +104,9 @@ end
 
 <hr>
 <h3>program</h3>
+
 ```
+
 import math
 
 def minimax(curDepth, nodeIndex, maxTurn, scores, targetDepth, alpha, beta):
