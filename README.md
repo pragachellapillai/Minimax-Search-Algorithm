@@ -126,7 +126,7 @@ def minimax(curDepth, nodeIndex, maxTurn, scores, targetDepth, alpha, beta):
         return maxEval
     else:
         minEval = math.inf  # Initialize minimum evaluation
-        # Minimizing player's turn
+        #Minimizing player's turn
         for i in range(2):  # There are two children for each node
             eval = minimax(curDepth + 1, nodeIndex * 2 + i, True, scores, targetDepth, alpha, beta)
             minEval = min(minEval, eval)
@@ -138,9 +138,10 @@ def minimax(curDepth, nodeIndex, maxTurn, scores, targetDepth, alpha, beta):
  scores = [3, 5, 6, 9, 1, 2, 0, -1]
     targetDepth = 3  # Example target depth
 
-    # Start Minimax from the root with initial alpha and beta values
+    #Start Minimax from the root with initial alpha and beta values
     best_value = minimax(0, 0, True, scores, targetDepth, -math.inf, math.inf)
     print("The optimal value is:", best_value)
+
     ```
     
 <h2>Sample Input and Output</h2>
